@@ -43,6 +43,6 @@
 - head f1 :-- shows first 10 lines of the file by default. With option -n , we can give number of lines to be shown on the screen.
 - tail f1 :-- just like head command shows first n lines, tail command shows last n lines.
 - less f1 :-- shows only that much data of the file which can be easily shown on one single page. Use arrow keys , up and down , to navigate through the file.
-Note :-- 
+- Note :-- 
 1. f1,f2,..etc are file names.
 2. "> f1" can be used with any command to store the output of the command into a file. Use "2" before ">" to store the error into the file.
