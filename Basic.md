@@ -15,6 +15,10 @@
 - ip addr show eth0:-- Display only IP address information for the eth0 interface.
 - ip help :-- Display basic help about the ip command.
 - ip link help :-- Display help about the ip link subcommand.
+## Operators
+- ">" :-- this operator is used with commands like cat, echo, etc. when user wants to overwrite already written file.
+- ">>" :-- appends new data or text at the end of the file.
+- "|" :-- known as pipe operator, this operator is used for joining more than one commands in linux. 
 ## ls commands
 - ls :-- used for listing all the directories present.
 - ls –color=none :-- used for listing directories and files without any color.
@@ -47,7 +51,8 @@
 - sort -u :-- removes duplicates while sorting.
 - sort -r :-- sort the data in reverse order.
 - sort -n :-- sort the numbers.
-- sort -k(and a number) :-- sort according to nth part of the line separated by space.  
+- sort -k(and a number) :-- sort according to nth part of the line separated by space.
+- grep [option] "pattern" f1 :-- search a particular pattern in a file or multple files. Use pipe operator to find a pattern in files.
 
 - Note :-- 
 1. f1,f2,..etc are file names.
