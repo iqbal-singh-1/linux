@@ -15,10 +15,14 @@
 - ip addr show eth0:-- Display only IP address information for the eth0 interface.
 - ip help :-- Display basic help about the ip command.
 - ip link help :-- Display help about the ip link subcommand.
+- echo $((expression)) :-- calculate arthemetic expressions like addition, substraction, multiplication and so on.
 ## Operators
 - ">" :-- this operator is used with commands like cat, echo, etc. when user wants to overwrite already written file.
 - ">>" :-- appends new data or text at the end of the file.
-- "|" :-- known as pipe operator, this operator is used for joining more than one commands in linux. 
+- "|" :-- known as pipe operator, this operator is used for joining more than one commands in linux.
+- "||" :-- this operator is used when one of the command used is to be run. If first command fails, then the second command runs and error message for first command is printed also. It is used inside <b>subshell</b>.
+- "&&" :-- it is used to make sure that second command runs if and only if first one runs smoothly.  It is used inside <b>subshell</b>.
+- "()" :-- it can be used to create a <b>subshell</b> where the commands entered in the brackets run without effecting the main shell.
 ## ls commands
 - ls :-- used for listing all the directories present.
 - ls –color=none :-- used for listing directories and files without any color.
