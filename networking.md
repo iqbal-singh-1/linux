@@ -38,20 +38,55 @@
 
 - There are 5 classes in IPv4:
 
-1. **Class A**: Ranges from `1.0.0.0` to `126.255.255.255`
-   - First bit of the 8 bits is always `0`.
-   - Default subnet mask for this class is `255.0.0.0`.
-   - Number of networks available: 128.
-   - Total number of hosts (excluding broadcasting): 16 million.
-   - This class is typically used for very large networks.
+1. **Class A**: 
+   - **Range**: `1.0.0.0` to `126.255.255.255`
+   - **First Bit**: Always `0`
+   - **Default Subnet Mask**: `255.0.0.0`
+   - **Number of Networks**: 128
+   - **Total Number of Hosts** (excluding broadcasting): 16 million
+   - **Usage**: Typically used for very large networks.
 
-2. **Class B**: Ranges from `128.0.0.0` to `191.255.255.255`
-   - First 2 bits are `1` and `0`.
-   - Subnet mask is `255.255.0.0`.
-   - Number of networks available: 16,384.
-   - Number of hosts per network: 65,534.
-   - This class is mainly used for medium to large-sized networks.
+2. **Class B**: 
+   - **Range**: `128.0.0.0` to `191.255.255.255`
+   - **First 2 Bits**: `1` and `0`
+   - **Subnet Mask**: `255.255.0.0`
+   - **Number of Networks**: 16,384
+   - **Number of Hosts per Network**: 65,534
+   - **Usage**: Mainly used for medium to large-sized networks.
 
-3. **Class C**: Ranges from `192.0.0.0` to `223.255.255.255`
-   - Its first 3 bits are always `1`, `1`, and `0`.
-   - Total number of networks: more than 2 million.
+3. **Class C**: 
+   - **Range**: `192.0.0.0` to `223.255.255.255`
+   - **First 3 Bits**: Always `1, 1, 0`
+   - **Subnet Mask**: `255.255.255.0`
+   - **Total Number of Networks**: More than 2 million
+   - **Hosts per Network**: 254
+   - **Usage**: Used for small to medium-sized networks.
+
+4. **Class D**: 
+   - **Range**: `224.0.0.0` to `239.255.255.255`
+   - **First 4 Bits**: `1, 1, 1, 0`
+   - **Usage**: Used to send data to multiple receivers at the same time (multicast).
+
+5. **Class E**: 
+   - **Range**: `240.0.0.0` to `255.255.255.255`
+   - **First 4 Bits**: `1, 1, 1, 1`
+   - **Usage**: Reserved for experimental purposes and future use.
+
+### Note
+- The last address in all networks is preserved for broadcasting purposes. Any packet sent to this address will be broadcasted to all other hosts on the same network (usually ending in `.255`).
+
+### Loopback Addresses
+- **Range**: `127.0.0.0` to `127.255.255.255`
+- **Usage**: Reserved for loopback, allowing a device to communicate with itself.
+- **Purpose**: Used for troubleshooting and testing if IP/TCP is functioning properly.
+- **Security**: Packets sent to this network are never routed to an external network, enhancing security.
+
+### Special Addresses
+- **0.0.0.0**: Used as an invalid IP address or represents the default route for routers.
+- **Usage**: Addresses in the `0.0.0.0` to `0.255.255.255` range are not routable on the public internet. They are meant for internal use within networks or for special administrative functions, ensuring that they do not interfere with global addressing schemes.
+
+## Subnetting
+- Subnetting is the process of dividing a large IP network into smaller, more manageable networks.
+- It helps organize the network into more manageable forms.
+- Each subnet is divided into two parts: the network part and the host part.
+- A subnet mask determines which portion is the network and which is the host.
