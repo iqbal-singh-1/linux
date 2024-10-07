@@ -90,3 +90,4 @@
 - It helps organize the network into more manageable forms.
 - Each subnet is divided into two parts: the network part and the host part.
 - A subnet mask determines which portion is the network and which is the host.
+- 
