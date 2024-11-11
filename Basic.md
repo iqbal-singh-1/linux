@@ -57,6 +57,7 @@
 - sort -n :-- sort the numbers.
 - sort -k(and a number) :-- sort according to nth part of the line separated by space.
 - grep [option] "pattern" f1 :-- search a particular pattern in a file or multple files. Use pipe operator to find a pattern in files.
+- wc -l :-- gives the word count of the given file.
 
 - Note :-- 
 1. f1,f2,..etc are file names.

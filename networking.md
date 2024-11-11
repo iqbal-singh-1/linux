@@ -28,9 +28,7 @@
   - `172.16.0.0` to `172.31.255.255`
   - `192.168.0.0` to `192.168.255.255`
 
-### IPv4 and IPv6
-
-#### IPv4
+### IPv4
 - It is one of the core protocols of the IP suite.
 - It is made up of 32 bits.
 - These 32 bits are divided into 4 octets, where the value of each octet lies between 0-255.
@@ -90,4 +88,15 @@
 - It helps organize the network into more manageable forms.
 - Each subnet is divided into two parts: the network part and the host part.
 - A subnet mask determines which portion is the network and which is the host.
-- 
+- For example :- The subnet mask of class A is 255.0.0.0. which means that the first octet is consumed for network selection and rest of them which contain zero are used for hosts on each network.
+
+### IPv6
+
+- IPv6 is totally different from IPv4.
+- It is a 128 bits address, making 16 bytes, divided into 8 portions known as hextets.
+- Each portion is 4 bits long.
+- Instead of using dot notations, we use : in IPv6 addresses.
+- It uses something known as SLAAC to shorten the IP address.
+- The rules for shortening are simple, we can emit the leading zeroes in any hextetx.
+- Rule no 2 is we can remove the whole continous section containg zeros by using :: but the ommision can be performed only once.
+- We can do unicast, multicast and anycast in IPv6.
